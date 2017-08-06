@@ -21,8 +21,9 @@ namespace Client
             clientSocket.Send(Encoding.Default.GetBytes("我是客户端你好"));
 
             Thread clientThread = new Thread(resiveMeassage);
-            clientThread.Start(clientSocket);             
-            
+            clientThread.Start(clientSocket);
+
+            while (true) { };
  
 
         }

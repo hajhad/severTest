@@ -28,6 +28,8 @@ namespace ServerTest
             Thread thread = new Thread(listenClientConnect);
             thread.Start();
 
+            while (true) { };
+
         }
 
 

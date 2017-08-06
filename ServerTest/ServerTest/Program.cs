@@ -11,6 +11,11 @@ namespace ServerTest
 {
     class Program
     {
+
+        string name;
+        int age;
+        object socket;
+
         static  Socket serverSocket = null;
         static void Main(string[] args)
         {

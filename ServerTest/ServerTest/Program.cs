@@ -36,7 +36,7 @@ namespace ServerTest
             Socket clientSocket = serverSocket.Accept();
             clientSocket.Send(Encoding.Default.GetBytes("服务器告诉你连接成功"));
             Thread reeThread = new Thread(reeThreadClientMessage);
-            reeThread.Start();
+            reeThread.Start(clientSocket);
         }
 
         static void reeThreadClientMessage(object clientSocket)
